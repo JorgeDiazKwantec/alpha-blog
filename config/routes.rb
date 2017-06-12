@@ -8,6 +8,8 @@ AlphaBlog::Application.routes.draw do
   root 'welcome#home'
   get 'about', to: 'welcome#about'
 
+  resources :articles
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
